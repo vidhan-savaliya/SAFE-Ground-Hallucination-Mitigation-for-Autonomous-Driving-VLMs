@@ -1,0 +1,26 @@
+Evaluate the predicted open-ended driving answer on a strict scale from 0 to 100 based on the question, ground-truth answer, and ground-truth physical driving context.
+
+Scoring Rubric (Total: 100 points):
+1. Action Alignment (20 points):
+   - Accurate alignment of the planned high-level trajectory/action (e.g., stop, yield, proceed, steer left/right, lane change) with the ground truth (up to 20 pts). Award 0 if suggested action compromises collision safety.
+
+2. Motion Precision (20 points):
+   - Precision of speed, acceleration/deceleration intensity, and target velocity profile appropriate to the scenario (up to 20 pts).
+
+3. Driving Context Appropriateness (15 points):
+   - Logical necessity and traffic-rule compliance of the chosen action given road geometry, signs, signals, and priority (up to 15 pts).
+
+4. Situational Awareness (15 points):
+   - Recognition of surrounding dynamic participants (pedestrians, cyclists, oncoming vehicles) and occlusion risks (up to 15 pts).
+
+5. Conciseness and Clarity (20 points):
+   - Clear, focused communication without extraneous or hallucinated descriptions (up to 20 pts).
+
+6. Grammar and Structure (10 points):
+   - Grammatical accuracy, professional autonomous system tone, and coherent structure (up to 10 pts).
+
+Format Requirements:
+Output individual scores for criteria 1 to 6, followed by:
+Total Score: [0-100]
+Brief Summary: [1-2 sentences]
+

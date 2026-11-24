@@ -1,0 +1,22 @@
+{
+  "num_evaluated_samples": 30,
+  "SWHS": {
+    "mean": 113.14696473848502,
+    "p95": 224.99998900594585,
+    "std": 55.914629188400916,
+    "com_component": 30.51125498857143,
+    "om_component": 75.00789600277075,
+    "attr_component": 15.255627494285715
+  },
+  "CHAIR": {
+    "chair_i": 73.8888888888889,
+    "chair_s": 76.66666666666667,
+    "chair_vru": 26.666666666666668
+  },
+  "Omission_Rates": {
+    "vru_omission_rate": 76.66666666666667,
+    "near_omission_rate": 68.75,
+    "total_vru_objects": 30,
+    "total_near_objects": 48
+  }
+}

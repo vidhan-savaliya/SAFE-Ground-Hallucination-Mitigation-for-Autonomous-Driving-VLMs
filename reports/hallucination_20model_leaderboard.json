@@ -1,0 +1,424 @@
+{
+  "num_val_frames": 6019,
+  "inference_ms_per_frame": 0.35,
+  "train_history": [
+    {
+      "epoch": 1,
+      "train_loss": 12.0803,
+      "val_loss": 13.1419,
+      "val_vacuity": 0.14
+    },
+    {
+      "epoch": 2,
+      "train_loss": 10.824,
+      "val_loss": 12.5921,
+      "val_vacuity": 0.1366
+    },
+    {
+      "epoch": 3,
+      "train_loss": 10.6562,
+      "val_loss": 12.2992,
+      "val_vacuity": 0.1371
+    },
+    {
+      "epoch": 4,
+      "train_loss": 10.1631,
+      "val_loss": 11.8963,
+      "val_vacuity": 0.138
+    },
+    {
+      "epoch": 5,
+      "train_loss": 9.6574,
+      "val_loss": 11.0842,
+      "val_vacuity": 0.1409
+    },
+    {
+      "epoch": 6,
+      "train_loss": 9.2499,
+      "val_loss": 10.7139,
+      "val_vacuity": 0.1404
+    },
+    {
+      "epoch": 7,
+      "train_loss": 9.0819,
+      "val_loss": 10.603,
+      "val_vacuity": 0.1429
+    },
+    {
+      "epoch": 8,
+      "train_loss": 9.006,
+      "val_loss": 10.4888,
+      "val_vacuity": 0.1436
+    }
+  ],
+  "ablation_results": [
+    {
+      "name": "Real Neural Base (Fixed 0.50)",
+      "use_temporal": false,
+      "use_conformal": false,
+      "use_frs_asymmetry": false,
+      "swhs_mean": 29.74,
+      "swhs_p95": 92.86,
+      "frs_swhs_mean": 30.86,
+      "frs_swhs_p95": 99.74,
+      "chair_i": 15.47,
+      "chair_s": 53.55,
+      "vru_omission": 8.66,
+      "near_omission": 5.9,
+      "diagnostics": {
+        "head_a_commission_precision": 96.53,
+        "head_a_commission_recall": 62.07,
+        "head_a_commission_f1": 75.56,
+        "head_b_vru_recovery_recall": 56.95,
+        "mean_fold_thresholds": {
+          "tau_com": 0.5,
+          "tau_om_vru": 0.5,
+          "tau_om_veh": 0.5
+        }
+      }
+    },
+    {
+      "name": "+ Temporal Smoothing",
+      "use_temporal": true,
+      "use_conformal": false,
+      "use_frs_asymmetry": false,
+      "swhs_mean": 29.16,
+      "swhs_p95": 90.99,
+      "frs_swhs_mean": 30.28,
+      "frs_swhs_p95": 98.83,
+      "chair_i": 15.42,
+      "chair_s": 53.55,
+      "vru_omission": 5.72,
+      "near_omission": 5.19,
+      "diagnostics": {
+        "head_a_commission_precision": 96.53,
+        "head_a_commission_recall": 62.07,
+        "head_a_commission_f1": 75.56,
+        "head_b_vru_recovery_recall": 64.53,
+        "mean_fold_thresholds": {
+          "tau_com": 0.5,
+          "tau_om_vru": 0.5,
+          "tau_om_veh": 0.5
+        }
+      }
+    },
+    {
+      "name": "+ Conformal Calibration",
+      "use_temporal": false,
+      "use_conformal": true,
+      "use_frs_asymmetry": false,
+      "swhs_mean": 31.73,
+      "swhs_p95": 100.0,
+      "frs_swhs_mean": 33.02,
+      "frs_swhs_p95": 100.0,
+      "chair_i": 12.51,
+      "chair_s": 42.88,
+      "vru_omission": 11.24,
+      "near_omission": 7.59,
+      "diagnostics": {
+        "head_a_commission_precision": 83.94,
+        "head_a_commission_recall": 71.36,
+        "head_a_commission_f1": 77.14,
+        "head_b_vru_recovery_recall": 50.67,
+        "mean_fold_thresholds": {
+          "tau_com": 0.3675,
+          "tau_om_vru": 0.05,
+          "tau_om_veh": 0.1
+        }
+      }
+    },
+    {
+      "name": "SAFE-Ground++ (Full Novelty)",
+      "use_temporal": true,
+      "use_conformal": true,
+      "use_frs_asymmetry": true,
+      "swhs_mean": 21.19,
+      "swhs_p95": 78.94,
+      "frs_swhs_mean": 22.07,
+      "frs_swhs_p95": 87.12,
+      "chair_i": 11.5,
+      "chair_s": 42.88,
+      "vru_omission": 0.23,
+      "near_omission": 0.03,
+      "diagnostics": {
+        "head_a_commission_precision": 83.94,
+        "head_a_commission_recall": 71.36,
+        "head_a_commission_f1": 77.14,
+        "head_b_vru_recovery_recall": 96.42,
+        "mean_fold_thresholds": {
+          "tau_com": 0.3675,
+          "tau_om_vru": 0.05,
+          "tau_om_veh": 0.1
+        }
+      }
+    }
+  ],
+  "full_safeground_plusplus_diagnostics": {
+    "head_a_commission_precision": 83.94,
+    "head_a_commission_recall": 71.36,
+    "head_a_commission_f1": 77.14,
+    "head_b_vru_recovery_recall": 96.42,
+    "mean_fold_thresholds": {
+      "tau_com": 0.3675,
+      "tau_om_vru": 0.05,
+      "tau_om_veh": 0.1
+    }
+  },
+  "total_models": 21,
+  "leaderboard": [
+    {
+      "model": "SAFE-Ground v1 (Ours: 3D X-Attn + CBF)",
+      "family": "Ours (SAFE-Ground)",
+      "chair_i": 2.32,
+      "chair_s": 13.99,
+      "vru_omission": 0.39,
+      "near_omission": 0.11,
+      "swhs": 3.42,
+      "black_overconf": 0.0,
+      "vacuity_black": 0.892,
+      "cbf": true
+    },
+    {
+      "model": "SAFE-Ground++ (Ours: Real Neural + Conformal + Temporal)",
+      "family": "Ours (SAFE-Ground++)",
+      "chair_i": 11.5,
+      "chair_s": 42.88,
+      "vru_omission": 0.23,
+      "near_omission": 0.03,
+      "swhs": 21.19,
+      "p95_swhs": 78.94,
+      "frs_swhs": 22.07,
+      "black_overconf": 0.0,
+      "vacuity_black": 0.892,
+      "cbf": true
+    },
+    {
+      "model": "Prompt-Injection (3D Text, nuScenes)",
+      "family": "Prior Mitigation",
+      "chair_i": 21.59,
+      "chair_s": 77.75,
+      "vru_omission": 4.94,
+      "near_omission": 2.66,
+      "swhs": 32.41,
+      "black_overconf": 85.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "Woodpecker (2D Post-Hoc)",
+      "family": "Prior Mitigation",
+      "chair_i": 24.6,
+      "chair_s": 68.9,
+      "vru_omission": 28.4,
+      "near_omission": 9.8,
+      "swhs": 43.7,
+      "black_overconf": 90.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "OPERA (Over-Trust Penalty)",
+      "family": "Prior Mitigation",
+      "chair_i": 29.8,
+      "chair_s": 71.6,
+      "vru_omission": 36.5,
+      "near_omission": 12.9,
+      "swhs": 52.3,
+      "black_overconf": 95.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "VCD (Visual Contrastive Decoding)",
+      "family": "Prior Mitigation",
+      "chair_i": 31.4,
+      "chair_s": 74.2,
+      "vru_omission": 37.9,
+      "near_omission": 13.5,
+      "swhs": 54.8,
+      "black_overconf": 96.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "GPT-4o (Raw Commercial)",
+      "family": "Closed API VLM",
+      "chair_i": 34.8,
+      "chair_s": 76.4,
+      "vru_omission": 31.2,
+      "near_omission": 10.4,
+      "swhs": 58.4,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "EMMA-AD (Raw Textual)",
+      "family": "AD Specialist VLM",
+      "chair_i": 35.4,
+      "chair_s": 79.1,
+      "vru_omission": 34.1,
+      "near_omission": 10.6,
+      "swhs": 58.9,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "Qwen2.5-VL-72B (Raw)",
+      "family": "Open General VLM",
+      "chair_i": 35.9,
+      "chair_s": 77.9,
+      "vru_omission": 32.8,
+      "near_omission": 10.9,
+      "swhs": 59.3,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "Claude 3.5 Sonnet (Raw)",
+      "family": "Closed API VLM",
+      "chair_i": 36.1,
+      "chair_s": 78.2,
+      "vru_omission": 33.5,
+      "near_omission": 11.1,
+      "swhs": 60.1,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "DriveLM-Agent (ECCV '24)",
+      "family": "AD Specialist VLM",
+      "chair_i": 36.2,
+      "chair_s": 81.0,
+      "vru_omission": 38.4,
+      "near_omission": 11.2,
+      "swhs": 61.2,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "Gemini 1.5 Pro (Raw)",
+      "family": "Closed API VLM",
+      "chair_i": 37.5,
+      "chair_s": 79.8,
+      "vru_omission": 34.9,
+      "near_omission": 11.8,
+      "swhs": 61.9,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "Qwen2-VL-72B (Raw)",
+      "family": "Open General VLM",
+      "chair_i": 38.4,
+      "chair_s": 81.2,
+      "vru_omission": 35.6,
+      "near_omission": 12.1,
+      "swhs": 62.1,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "DriveMM-7B (AD Specialist)",
+      "family": "AD Specialist VLM",
+      "chair_i": 38.9,
+      "chair_s": 82.6,
+      "vru_omission": 36.8,
+      "near_omission": 12.0,
+      "swhs": 62.7,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "InternVL2-76B (Raw)",
+      "family": "Open General VLM",
+      "chair_i": 39.1,
+      "chair_s": 82.0,
+      "vru_omission": 36.2,
+      "near_omission": 12.5,
+      "swhs": 63.4,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "GPT-4V (Raw)",
+      "family": "Closed API VLM",
+      "chair_i": 41.2,
+      "chair_s": 83.5,
+      "vru_omission": 38.7,
+      "near_omission": 13.2,
+      "swhs": 65.4,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "Qwen2.5-VL-7B (Raw)",
+      "family": "Open General VLM",
+      "chair_i": 42.1,
+      "chair_s": 85.4,
+      "vru_omission": 40.5,
+      "near_omission": 14.1,
+      "swhs": 67.2,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "Qwen2-VL-7B (Raw)",
+      "family": "Open General VLM",
+      "chair_i": 44.39,
+      "chair_s": 87.54,
+      "vru_omission": 42.93,
+      "near_omission": 14.89,
+      "swhs": 69.39,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "LLaVA-1.6-34B (Raw)",
+      "family": "Open General VLM",
+      "chair_i": 46.8,
+      "chair_s": 89.2,
+      "vru_omission": 44.6,
+      "near_omission": 16.3,
+      "swhs": 72.8,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "DOLPHINS-9B (AD Specialist)",
+      "family": "AD Specialist VLM",
+      "chair_i": 47.5,
+      "chair_s": 90.4,
+      "vru_omission": 46.2,
+      "near_omission": 17.5,
+      "swhs": 74.6,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    },
+    {
+      "model": "Senna-7B (AD Specialist)",
+      "family": "AD Specialist VLM",
+      "chair_i": 49.2,
+      "chair_s": 91.8,
+      "vru_omission": 48.1,
+      "near_omission": 18.4,
+      "swhs": 76.9,
+      "black_overconf": 100.0,
+      "vacuity_black": 0.0,
+      "cbf": false
+    }
+  ]
+}

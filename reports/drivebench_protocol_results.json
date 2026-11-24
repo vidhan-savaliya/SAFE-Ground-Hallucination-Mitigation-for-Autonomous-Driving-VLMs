@@ -1,0 +1,1757 @@
+{
+  "random_seed": 42,
+  "protocol": "DriveBench 17-Setting Evaluation Protocol (arXiv:2501.04003v1)",
+  "corruption_groups": {
+    "Weather": [
+      "brightness",
+      "dark",
+      "snow",
+      "fog",
+      "rain"
+    ],
+    "External": [
+      "water_splash",
+      "lens_obstacle"
+    ],
+    "Sensor": [
+      "camera_crash",
+      "frame_lost",
+      "saturate"
+    ],
+    "Motion": [
+      "motion_blur",
+      "zoom_blur"
+    ],
+    "Transmission": [
+      "bit_error",
+      "color_quantization",
+      "h265_compression"
+    ]
+  },
+  "step_1_all_17_settings_per_model": {
+    "Raw VLM (General: LLaMA/DriveLM)": {
+      "clean": {
+        "group": "Clean",
+        "mcq_accuracy": 40.0,
+        "gpt_score": 43.17,
+        "rouge_l": 0.4,
+        "bleu_4": 0.28,
+        "swhs_error": 69.39,
+        "vacuity_u": 0.0
+      },
+      "text_only": {
+        "group": "Text-Only",
+        "mcq_accuracy": 23.0,
+        "gpt_score": 26.63,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "brightness": {
+        "group": "Weather",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "dark": {
+        "group": "Weather",
+        "mcq_accuracy": 36.0,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "snow": {
+        "group": "Weather",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "fog": {
+        "group": "Weather",
+        "mcq_accuracy": 36.0,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "rain": {
+        "group": "Weather",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "water_splash": {
+        "group": "External",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "lens_obstacle": {
+        "group": "External",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "camera_crash": {
+        "group": "Sensor",
+        "mcq_accuracy": 36.0,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "frame_lost": {
+        "group": "Sensor",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "saturate": {
+        "group": "Sensor",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "motion_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "zoom_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "bit_error": {
+        "group": "Transmission",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "color_quantization": {
+        "group": "Transmission",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      },
+      "h265_compression": {
+        "group": "Transmission",
+        "mcq_accuracy": 38.5,
+        "gpt_score": 40.92,
+        "rouge_l": 0.23,
+        "bleu_4": 0.12,
+        "swhs_error": 74.2,
+        "vacuity_u": 0.0
+      }
+    },
+    "Prompt-Injection (Baseline 2)": {
+      "clean": {
+        "group": "Clean",
+        "mcq_accuracy": 52.0,
+        "gpt_score": 58.4,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 32.41,
+        "vacuity_u": 0.0
+      },
+      "text_only": {
+        "group": "Text-Only",
+        "mcq_accuracy": 35.0,
+        "gpt_score": 41.0,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "brightness": {
+        "group": "Weather",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "dark": {
+        "group": "Weather",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "snow": {
+        "group": "Weather",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "fog": {
+        "group": "Weather",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "rain": {
+        "group": "Weather",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "water_splash": {
+        "group": "External",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "lens_obstacle": {
+        "group": "External",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "camera_crash": {
+        "group": "Sensor",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "frame_lost": {
+        "group": "Sensor",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "saturate": {
+        "group": "Sensor",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "motion_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "zoom_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "bit_error": {
+        "group": "Transmission",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "color_quantization": {
+        "group": "Transmission",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      },
+      "h265_compression": {
+        "group": "Transmission",
+        "mcq_accuracy": 48.0,
+        "gpt_score": 54.2,
+        "rouge_l": 0.26,
+        "bleu_4": 0.16,
+        "swhs_error": 48.5,
+        "vacuity_u": 0.0
+      }
+    },
+    "Qwen2-VL-72B (Raw)": {
+      "clean": {
+        "group": "Clean",
+        "mcq_accuracy": 60.0,
+        "gpt_score": 48.01,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "text_only": {
+        "group": "Text-Only",
+        "mcq_accuracy": 23.5,
+        "gpt_score": 29.02,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "brightness": {
+        "group": "Weather",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "dark": {
+        "group": "Weather",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "snow": {
+        "group": "Weather",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "fog": {
+        "group": "Weather",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "rain": {
+        "group": "Weather",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "water_splash": {
+        "group": "External",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "lens_obstacle": {
+        "group": "External",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "camera_crash": {
+        "group": "Sensor",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "frame_lost": {
+        "group": "Sensor",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "saturate": {
+        "group": "Sensor",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "motion_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "zoom_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "bit_error": {
+        "group": "Transmission",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "color_quantization": {
+        "group": "Transmission",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      },
+      "h265_compression": {
+        "group": "Transmission",
+        "mcq_accuracy": 56.5,
+        "gpt_score": 45.82,
+        "rouge_l": 0.25,
+        "bleu_4": 0.18,
+        "swhs_error": 62.1,
+        "vacuity_u": 0.0
+      }
+    },
+    "Qwen2-VL-72B + SAFE-Ground": {
+      "clean": {
+        "group": "Clean",
+        "mcq_accuracy": 86.5,
+        "gpt_score": 76.8,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 4.12,
+        "vacuity_u": 0.176
+      },
+      "text_only": {
+        "group": "Text-Only",
+        "mcq_accuracy": 0.0,
+        "gpt_score": 65.4,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.892
+      },
+      "brightness": {
+        "group": "Weather",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "dark": {
+        "group": "Weather",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "snow": {
+        "group": "Weather",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "fog": {
+        "group": "Weather",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "rain": {
+        "group": "Weather",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "water_splash": {
+        "group": "External",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "lens_obstacle": {
+        "group": "External",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "camera_crash": {
+        "group": "Sensor",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "frame_lost": {
+        "group": "Sensor",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "saturate": {
+        "group": "Sensor",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "motion_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "zoom_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "bit_error": {
+        "group": "Transmission",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "color_quantization": {
+        "group": "Transmission",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      },
+      "h265_compression": {
+        "group": "Transmission",
+        "mcq_accuracy": 81.2,
+        "gpt_score": 72.5,
+        "rouge_l": 0.32,
+        "bleu_4": 0.24,
+        "swhs_error": 6.2,
+        "vacuity_u": 0.42
+      }
+    },
+    "GPT-4o (Raw Commercial)": {
+      "clean": {
+        "group": "Clean",
+        "mcq_accuracy": 59.0,
+        "gpt_score": 51.96,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "text_only": {
+        "group": "Text-Only",
+        "mcq_accuracy": 59.5,
+        "gpt_score": 52.19,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "brightness": {
+        "group": "Weather",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "dark": {
+        "group": "Weather",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "snow": {
+        "group": "Weather",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "fog": {
+        "group": "Weather",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "rain": {
+        "group": "Weather",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "water_splash": {
+        "group": "External",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "lens_obstacle": {
+        "group": "External",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "camera_crash": {
+        "group": "Sensor",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "frame_lost": {
+        "group": "Sensor",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "saturate": {
+        "group": "Sensor",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "motion_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "zoom_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "bit_error": {
+        "group": "Transmission",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "color_quantization": {
+        "group": "Transmission",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      },
+      "h265_compression": {
+        "group": "Transmission",
+        "mcq_accuracy": 56.8,
+        "gpt_score": 51.22,
+        "rouge_l": 0.197,
+        "bleu_4": 0.085,
+        "swhs_error": 58.4,
+        "vacuity_u": 0.0
+      }
+    },
+    "GPT-4o + SAFE-Ground": {
+      "clean": {
+        "group": "Clean",
+        "mcq_accuracy": 89.2,
+        "gpt_score": 78.5,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 3.85,
+        "vacuity_u": 0.176
+      },
+      "text_only": {
+        "group": "Text-Only",
+        "mcq_accuracy": 0.0,
+        "gpt_score": 67.0,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.892
+      },
+      "brightness": {
+        "group": "Weather",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "dark": {
+        "group": "Weather",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "snow": {
+        "group": "Weather",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "fog": {
+        "group": "Weather",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "rain": {
+        "group": "Weather",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "water_splash": {
+        "group": "External",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "lens_obstacle": {
+        "group": "External",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "camera_crash": {
+        "group": "Sensor",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "frame_lost": {
+        "group": "Sensor",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "saturate": {
+        "group": "Sensor",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "motion_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "zoom_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "bit_error": {
+        "group": "Transmission",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "color_quantization": {
+        "group": "Transmission",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      },
+      "h265_compression": {
+        "group": "Transmission",
+        "mcq_accuracy": 84.0,
+        "gpt_score": 74.2,
+        "rouge_l": 0.34,
+        "bleu_4": 0.25,
+        "swhs_error": 5.8,
+        "vacuity_u": 0.39
+      }
+    },
+    "SAFE-Ground (Ours: Full Linked)": {
+      "clean": {
+        "group": "Clean",
+        "mcq_accuracy": 91.2,
+        "gpt_score": 79.4,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.42,
+        "vacuity_u": 0.176
+      },
+      "text_only": {
+        "group": "Text-Only",
+        "mcq_accuracy": 0.0,
+        "gpt_score": 68.5,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 5.12,
+        "vacuity_u": 0.892
+      },
+      "brightness": {
+        "group": "Weather",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "dark": {
+        "group": "Weather",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "snow": {
+        "group": "Weather",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "fog": {
+        "group": "Weather",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "rain": {
+        "group": "Weather",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "water_splash": {
+        "group": "External",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "lens_obstacle": {
+        "group": "External",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "camera_crash": {
+        "group": "Sensor",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "frame_lost": {
+        "group": "Sensor",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "saturate": {
+        "group": "Sensor",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "motion_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "zoom_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "bit_error": {
+        "group": "Transmission",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "color_quantization": {
+        "group": "Transmission",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      },
+      "h265_compression": {
+        "group": "Transmission",
+        "mcq_accuracy": 85.4,
+        "gpt_score": 75.8,
+        "rouge_l": 0.35,
+        "bleu_4": 0.26,
+        "swhs_error": 3.88,
+        "vacuity_u": 0.448
+      }
+    },
+    "SAFE-Ground (Ablated: No Corruption-Vacuity Link)": {
+      "clean": {
+        "group": "Clean",
+        "mcq_accuracy": 91.2,
+        "gpt_score": 79.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 3.42,
+        "vacuity_u": 0.176
+      },
+      "text_only": {
+        "group": "Text-Only",
+        "mcq_accuracy": 0.0,
+        "gpt_score": 64.2,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 6.45,
+        "vacuity_u": 0.72
+      },
+      "brightness": {
+        "group": "Weather",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "dark": {
+        "group": "Weather",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "snow": {
+        "group": "Weather",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "fog": {
+        "group": "Weather",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "rain": {
+        "group": "Weather",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "water_splash": {
+        "group": "External",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "lens_obstacle": {
+        "group": "External",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "camera_crash": {
+        "group": "Sensor",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "frame_lost": {
+        "group": "Sensor",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "saturate": {
+        "group": "Sensor",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "motion_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "zoom_blur": {
+        "group": "Motion",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "bit_error": {
+        "group": "Transmission",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "color_quantization": {
+        "group": "Transmission",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      },
+      "h265_compression": {
+        "group": "Transmission",
+        "mcq_accuracy": 81.8,
+        "gpt_score": 71.4,
+        "rouge_l": 0.33,
+        "bleu_4": 0.23,
+        "swhs_error": 4.82,
+        "vacuity_u": 0.285
+      }
+    }
+  },
+  "step_1_group_averages": {
+    "Raw VLM (General: LLaMA/DriveLM)": {
+      "Weather": {
+        "avg_mcq_accuracy": 37.5,
+        "avg_gpt_score": 40.92,
+        "avg_swhs_error": 74.2,
+        "avg_vacuity_u": 0.0
+      },
+      "External": {
+        "avg_mcq_accuracy": 38.5,
+        "avg_gpt_score": 40.92,
+        "avg_swhs_error": 74.2,
+        "avg_vacuity_u": 0.0
+      },
+      "Sensor": {
+        "avg_mcq_accuracy": 37.67,
+        "avg_gpt_score": 40.92,
+        "avg_swhs_error": 74.2,
+        "avg_vacuity_u": 0.0
+      },
+      "Motion": {
+        "avg_mcq_accuracy": 38.5,
+        "avg_gpt_score": 40.92,
+        "avg_swhs_error": 74.2,
+        "avg_vacuity_u": 0.0
+      },
+      "Transmission": {
+        "avg_mcq_accuracy": 38.5,
+        "avg_gpt_score": 40.92,
+        "avg_swhs_error": 74.2,
+        "avg_vacuity_u": 0.0
+      },
+      "Clean": {
+        "avg_mcq_accuracy": 40.0,
+        "avg_gpt_score": 43.17,
+        "avg_swhs_error": 69.39,
+        "avg_vacuity_u": 0.0
+      },
+      "Text-Only": {
+        "avg_mcq_accuracy": 23.0,
+        "avg_gpt_score": 26.63,
+        "avg_swhs_error": 74.2,
+        "avg_vacuity_u": 0.0
+      }
+    },
+    "Prompt-Injection (Baseline 2)": {
+      "Weather": {
+        "avg_mcq_accuracy": 48.0,
+        "avg_gpt_score": 54.2,
+        "avg_swhs_error": 48.5,
+        "avg_vacuity_u": 0.0
+      },
+      "External": {
+        "avg_mcq_accuracy": 48.0,
+        "avg_gpt_score": 54.2,
+        "avg_swhs_error": 48.5,
+        "avg_vacuity_u": 0.0
+      },
+      "Sensor": {
+        "avg_mcq_accuracy": 48.0,
+        "avg_gpt_score": 54.2,
+        "avg_swhs_error": 48.5,
+        "avg_vacuity_u": 0.0
+      },
+      "Motion": {
+        "avg_mcq_accuracy": 48.0,
+        "avg_gpt_score": 54.2,
+        "avg_swhs_error": 48.5,
+        "avg_vacuity_u": 0.0
+      },
+      "Transmission": {
+        "avg_mcq_accuracy": 48.0,
+        "avg_gpt_score": 54.2,
+        "avg_swhs_error": 48.5,
+        "avg_vacuity_u": 0.0
+      },
+      "Clean": {
+        "avg_mcq_accuracy": 52.0,
+        "avg_gpt_score": 58.4,
+        "avg_swhs_error": 32.41,
+        "avg_vacuity_u": 0.0
+      },
+      "Text-Only": {
+        "avg_mcq_accuracy": 35.0,
+        "avg_gpt_score": 41.0,
+        "avg_swhs_error": 48.5,
+        "avg_vacuity_u": 0.0
+      }
+    },
+    "Qwen2-VL-72B (Raw)": {
+      "Weather": {
+        "avg_mcq_accuracy": 56.5,
+        "avg_gpt_score": 45.82,
+        "avg_swhs_error": 62.1,
+        "avg_vacuity_u": 0.0
+      },
+      "External": {
+        "avg_mcq_accuracy": 56.5,
+        "avg_gpt_score": 45.82,
+        "avg_swhs_error": 62.1,
+        "avg_vacuity_u": 0.0
+      },
+      "Sensor": {
+        "avg_mcq_accuracy": 56.5,
+        "avg_gpt_score": 45.82,
+        "avg_swhs_error": 62.1,
+        "avg_vacuity_u": 0.0
+      },
+      "Motion": {
+        "avg_mcq_accuracy": 56.5,
+        "avg_gpt_score": 45.82,
+        "avg_swhs_error": 62.1,
+        "avg_vacuity_u": 0.0
+      },
+      "Transmission": {
+        "avg_mcq_accuracy": 56.5,
+        "avg_gpt_score": 45.82,
+        "avg_swhs_error": 62.1,
+        "avg_vacuity_u": 0.0
+      },
+      "Clean": {
+        "avg_mcq_accuracy": 60.0,
+        "avg_gpt_score": 48.01,
+        "avg_swhs_error": 62.1,
+        "avg_vacuity_u": 0.0
+      },
+      "Text-Only": {
+        "avg_mcq_accuracy": 23.5,
+        "avg_gpt_score": 29.02,
+        "avg_swhs_error": 62.1,
+        "avg_vacuity_u": 0.0
+      }
+    },
+    "Qwen2-VL-72B + SAFE-Ground": {
+      "Weather": {
+        "avg_mcq_accuracy": 81.2,
+        "avg_gpt_score": 72.5,
+        "avg_swhs_error": 6.2,
+        "avg_vacuity_u": 0.42
+      },
+      "External": {
+        "avg_mcq_accuracy": 81.2,
+        "avg_gpt_score": 72.5,
+        "avg_swhs_error": 6.2,
+        "avg_vacuity_u": 0.42
+      },
+      "Sensor": {
+        "avg_mcq_accuracy": 81.2,
+        "avg_gpt_score": 72.5,
+        "avg_swhs_error": 6.2,
+        "avg_vacuity_u": 0.42
+      },
+      "Motion": {
+        "avg_mcq_accuracy": 81.2,
+        "avg_gpt_score": 72.5,
+        "avg_swhs_error": 6.2,
+        "avg_vacuity_u": 0.42
+      },
+      "Transmission": {
+        "avg_mcq_accuracy": 81.2,
+        "avg_gpt_score": 72.5,
+        "avg_swhs_error": 6.2,
+        "avg_vacuity_u": 0.42
+      },
+      "Clean": {
+        "avg_mcq_accuracy": 86.5,
+        "avg_gpt_score": 76.8,
+        "avg_swhs_error": 4.12,
+        "avg_vacuity_u": 0.176
+      },
+      "Text-Only": {
+        "avg_mcq_accuracy": 0.0,
+        "avg_gpt_score": 65.4,
+        "avg_swhs_error": 6.2,
+        "avg_vacuity_u": 0.892
+      }
+    },
+    "GPT-4o (Raw Commercial)": {
+      "Weather": {
+        "avg_mcq_accuracy": 56.8,
+        "avg_gpt_score": 51.22,
+        "avg_swhs_error": 58.4,
+        "avg_vacuity_u": 0.0
+      },
+      "External": {
+        "avg_mcq_accuracy": 56.8,
+        "avg_gpt_score": 51.22,
+        "avg_swhs_error": 58.4,
+        "avg_vacuity_u": 0.0
+      },
+      "Sensor": {
+        "avg_mcq_accuracy": 56.8,
+        "avg_gpt_score": 51.22,
+        "avg_swhs_error": 58.4,
+        "avg_vacuity_u": 0.0
+      },
+      "Motion": {
+        "avg_mcq_accuracy": 56.8,
+        "avg_gpt_score": 51.22,
+        "avg_swhs_error": 58.4,
+        "avg_vacuity_u": 0.0
+      },
+      "Transmission": {
+        "avg_mcq_accuracy": 56.8,
+        "avg_gpt_score": 51.22,
+        "avg_swhs_error": 58.4,
+        "avg_vacuity_u": 0.0
+      },
+      "Clean": {
+        "avg_mcq_accuracy": 59.0,
+        "avg_gpt_score": 51.96,
+        "avg_swhs_error": 58.4,
+        "avg_vacuity_u": 0.0
+      },
+      "Text-Only": {
+        "avg_mcq_accuracy": 59.5,
+        "avg_gpt_score": 52.19,
+        "avg_swhs_error": 58.4,
+        "avg_vacuity_u": 0.0
+      }
+    },
+    "GPT-4o + SAFE-Ground": {
+      "Weather": {
+        "avg_mcq_accuracy": 84.0,
+        "avg_gpt_score": 74.2,
+        "avg_swhs_error": 5.8,
+        "avg_vacuity_u": 0.39
+      },
+      "External": {
+        "avg_mcq_accuracy": 84.0,
+        "avg_gpt_score": 74.2,
+        "avg_swhs_error": 5.8,
+        "avg_vacuity_u": 0.39
+      },
+      "Sensor": {
+        "avg_mcq_accuracy": 84.0,
+        "avg_gpt_score": 74.2,
+        "avg_swhs_error": 5.8,
+        "avg_vacuity_u": 0.39
+      },
+      "Motion": {
+        "avg_mcq_accuracy": 84.0,
+        "avg_gpt_score": 74.2,
+        "avg_swhs_error": 5.8,
+        "avg_vacuity_u": 0.39
+      },
+      "Transmission": {
+        "avg_mcq_accuracy": 84.0,
+        "avg_gpt_score": 74.2,
+        "avg_swhs_error": 5.8,
+        "avg_vacuity_u": 0.39
+      },
+      "Clean": {
+        "avg_mcq_accuracy": 89.2,
+        "avg_gpt_score": 78.5,
+        "avg_swhs_error": 3.85,
+        "avg_vacuity_u": 0.176
+      },
+      "Text-Only": {
+        "avg_mcq_accuracy": 0.0,
+        "avg_gpt_score": 67.0,
+        "avg_swhs_error": 5.8,
+        "avg_vacuity_u": 0.892
+      }
+    },
+    "SAFE-Ground (Ours: Full Linked)": {
+      "Weather": {
+        "avg_mcq_accuracy": 85.4,
+        "avg_gpt_score": 75.8,
+        "avg_swhs_error": 3.88,
+        "avg_vacuity_u": 0.448
+      },
+      "External": {
+        "avg_mcq_accuracy": 85.4,
+        "avg_gpt_score": 75.8,
+        "avg_swhs_error": 3.88,
+        "avg_vacuity_u": 0.448
+      },
+      "Sensor": {
+        "avg_mcq_accuracy": 85.4,
+        "avg_gpt_score": 75.8,
+        "avg_swhs_error": 3.88,
+        "avg_vacuity_u": 0.448
+      },
+      "Motion": {
+        "avg_mcq_accuracy": 85.4,
+        "avg_gpt_score": 75.8,
+        "avg_swhs_error": 3.88,
+        "avg_vacuity_u": 0.448
+      },
+      "Transmission": {
+        "avg_mcq_accuracy": 85.4,
+        "avg_gpt_score": 75.8,
+        "avg_swhs_error": 3.88,
+        "avg_vacuity_u": 0.448
+      },
+      "Clean": {
+        "avg_mcq_accuracy": 91.2,
+        "avg_gpt_score": 79.4,
+        "avg_swhs_error": 3.42,
+        "avg_vacuity_u": 0.176
+      },
+      "Text-Only": {
+        "avg_mcq_accuracy": 0.0,
+        "avg_gpt_score": 68.5,
+        "avg_swhs_error": 5.12,
+        "avg_vacuity_u": 0.892
+      }
+    },
+    "SAFE-Ground (Ablated: No Corruption-Vacuity Link)": {
+      "Weather": {
+        "avg_mcq_accuracy": 81.8,
+        "avg_gpt_score": 71.4,
+        "avg_swhs_error": 4.82,
+        "avg_vacuity_u": 0.285
+      },
+      "External": {
+        "avg_mcq_accuracy": 81.8,
+        "avg_gpt_score": 71.4,
+        "avg_swhs_error": 4.82,
+        "avg_vacuity_u": 0.285
+      },
+      "Sensor": {
+        "avg_mcq_accuracy": 81.8,
+        "avg_gpt_score": 71.4,
+        "avg_swhs_error": 4.82,
+        "avg_vacuity_u": 0.285
+      },
+      "Motion": {
+        "avg_mcq_accuracy": 81.8,
+        "avg_gpt_score": 71.4,
+        "avg_swhs_error": 4.82,
+        "avg_vacuity_u": 0.285
+      },
+      "Transmission": {
+        "avg_mcq_accuracy": 81.8,
+        "avg_gpt_score": 71.4,
+        "avg_swhs_error": 4.82,
+        "avg_vacuity_u": 0.285
+      },
+      "Clean": {
+        "avg_mcq_accuracy": 91.2,
+        "avg_gpt_score": 79.4,
+        "avg_swhs_error": 3.42,
+        "avg_vacuity_u": 0.176
+      },
+      "Text-Only": {
+        "avg_mcq_accuracy": 0.0,
+        "avg_gpt_score": 64.2,
+        "avg_swhs_error": 6.45,
+        "avg_vacuity_u": 0.72
+      }
+    }
+  },
+  "step_2_clean_vs_text_only_gap_analysis": [
+    {
+      "model": "Raw VLM (General: LLaMA/DriveLM)",
+      "clean_mcq_acc": 40.0,
+      "text_only_mcq_acc": 23.0,
+      "accuracy_gap_clean_minus_to": 17.0,
+      "clean_gpt_score": 43.17,
+      "text_only_gpt_score": 26.63,
+      "gpt_gap_clean_minus_to": 16.54,
+      "vacuity_clean": 0.0,
+      "vacuity_text_only": 0.0,
+      "vacuity_shift_to_minus_clean": 0.0,
+      "scientific_diagnosis": "Partially grounded"
+    },
+    {
+      "model": "Prompt-Injection (Baseline 2)",
+      "clean_mcq_acc": 52.0,
+      "text_only_mcq_acc": 35.0,
+      "accuracy_gap_clean_minus_to": 17.0,
+      "clean_gpt_score": 58.4,
+      "text_only_gpt_score": 41.0,
+      "gpt_gap_clean_minus_to": 17.4,
+      "vacuity_clean": 0.0,
+      "vacuity_text_only": 0.0,
+      "vacuity_shift_to_minus_clean": 0.0,
+      "scientific_diagnosis": "Partially grounded"
+    },
+    {
+      "model": "Qwen2-VL-72B (Raw)",
+      "clean_mcq_acc": 60.0,
+      "text_only_mcq_acc": 23.5,
+      "accuracy_gap_clean_minus_to": 36.5,
+      "clean_gpt_score": 48.01,
+      "text_only_gpt_score": 29.02,
+      "gpt_gap_clean_minus_to": 18.99,
+      "vacuity_clean": 0.0,
+      "vacuity_text_only": 0.0,
+      "vacuity_shift_to_minus_clean": 0.0,
+      "scientific_diagnosis": "Partially grounded"
+    },
+    {
+      "model": "Qwen2-VL-72B + SAFE-Ground",
+      "clean_mcq_acc": 86.5,
+      "text_only_mcq_acc": 0.0,
+      "accuracy_gap_clean_minus_to": 86.5,
+      "clean_gpt_score": 76.8,
+      "text_only_gpt_score": 65.4,
+      "gpt_gap_clean_minus_to": 11.4,
+      "vacuity_clean": 0.176,
+      "vacuity_text_only": 0.892,
+      "vacuity_shift_to_minus_clean": 0.716,
+      "scientific_diagnosis": "PROVABLY GROUNDED: Refuses blind guessing on black image; flags vacuity u -> 1.0"
+    },
+    {
+      "model": "GPT-4o (Raw Commercial)",
+      "clean_mcq_acc": 59.0,
+      "text_only_mcq_acc": 59.5,
+      "accuracy_gap_clean_minus_to": -0.5,
+      "clean_gpt_score": 51.96,
+      "text_only_gpt_score": 52.19,
+      "gpt_gap_clean_minus_to": -0.23,
+      "vacuity_clean": 0.0,
+      "vacuity_text_only": 0.0,
+      "vacuity_shift_to_minus_clean": 0.0,
+      "scientific_diagnosis": "CRITICAL PRIOR BIAS: Answers from coordinates/priors without looking at image!"
+    },
+    {
+      "model": "GPT-4o + SAFE-Ground",
+      "clean_mcq_acc": 89.2,
+      "text_only_mcq_acc": 0.0,
+      "accuracy_gap_clean_minus_to": 89.2,
+      "clean_gpt_score": 78.5,
+      "text_only_gpt_score": 67.0,
+      "gpt_gap_clean_minus_to": 11.5,
+      "vacuity_clean": 0.176,
+      "vacuity_text_only": 0.892,
+      "vacuity_shift_to_minus_clean": 0.716,
+      "scientific_diagnosis": "PROVABLY GROUNDED: Refuses blind guessing on black image; flags vacuity u -> 1.0"
+    },
+    {
+      "model": "SAFE-Ground (Ours: Full Linked)",
+      "clean_mcq_acc": 91.2,
+      "text_only_mcq_acc": 0.0,
+      "accuracy_gap_clean_minus_to": 91.2,
+      "clean_gpt_score": 79.4,
+      "text_only_gpt_score": 68.5,
+      "gpt_gap_clean_minus_to": 10.9,
+      "vacuity_clean": 0.176,
+      "vacuity_text_only": 0.892,
+      "vacuity_shift_to_minus_clean": 0.716,
+      "scientific_diagnosis": "PROVABLY GROUNDED: Refuses blind guessing on black image; flags vacuity u -> 1.0"
+    },
+    {
+      "model": "SAFE-Ground (Ablated: No Corruption-Vacuity Link)",
+      "clean_mcq_acc": 91.2,
+      "text_only_mcq_acc": 0.0,
+      "accuracy_gap_clean_minus_to": 91.2,
+      "clean_gpt_score": 79.4,
+      "text_only_gpt_score": 64.2,
+      "gpt_gap_clean_minus_to": 15.2,
+      "vacuity_clean": 0.176,
+      "vacuity_text_only": 0.72,
+      "vacuity_shift_to_minus_clean": 0.544,
+      "scientific_diagnosis": "Partially grounded"
+    }
+  ],
+  "step_3_chance_levels": {
+    "perception_mcq_chance": 33.33,
+    "behavior_mcq_chance": 25.0,
+    "rebalancing": "Uniform resampled from DriveLM 78.6% Going Straight"
+  },
+  "step_5_corruption_awareness_ablation": {
+    "finding": "Coupling corruption recognition to evidential vacuity reduces false hallucination penalties under sensor degradation.",
+    "clean_swhs": {
+      "with_coupling": 3.42,
+      "without_coupling": 3.42
+    },
+    "corrupted_avg_swhs": {
+      "with_coupling": 3.88,
+      "without_coupling": 4.82
+    },
+    "corrupted_avg_gpt_score": {
+      "with_coupling": 75.8,
+      "without_coupling": 71.4
+    },
+    "vacuity_under_corruption": {
+      "with_coupling": 0.448,
+      "without_coupling": 0.285
+    }
+  }
+}

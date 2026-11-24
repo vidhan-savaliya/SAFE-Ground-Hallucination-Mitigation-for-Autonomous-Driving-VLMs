@@ -1,0 +1,80 @@
+{
+  "raw_vlm": {
+    "num_evaluated_samples": 6019,
+    "SWHS": {
+      "mean": 69.38803654566519,
+      "p95": 135.0652448263259,
+      "std": 38.99488946381595,
+      "com_component": 39.838432614452316,
+      "om_component": 19.5899957775998,
+      "attr_component": 19.919216307226158,
+      "mean_frs_swhs": 67.5193263301626,
+      "p95_frs_swhs": 135.73763299600017
+    },
+    "CHAIR": {
+      "chair_i": 44.39414077643019,
+      "chair_s": 87.539458381791,
+      "chair_vru": 28.964667441989253
+    },
+    "Omission_Rates": {
+      "vru_omission_rate": 42.93121233508877,
+      "near_omission_rate": 14.891072938843362,
+      "total_vru_objects": 36838,
+      "total_near_objects": 34289
+    }
+  },
+  "prompt_injection": {
+    "num_evaluated_samples": 6019,
+    "SWHS": {
+      "mean": 32.41204127877436,
+      "p95": 95.66111726688442,
+      "std": 31.752332992756855,
+      "com_component": 22.79786795114171,
+      "om_component": 3.9147063398472257,
+      "attr_component": 11.398933975570856,
+      "mean_frs_swhs": 34.028835168173416,
+      "p95_frs_swhs": 102.11404710630838
+    },
+    "CHAIR": {
+      "chair_i": 21.5934541901425,
+      "chair_s": 77.7537796976242,
+      "chair_vru": 18.426321410391843
+    },
+    "Omission_Rates": {
+      "vru_omission_rate": 4.943265106683316,
+      "near_omission_rate": 2.6626614949400684,
+      "total_vru_objects": 36838,
+      "total_near_objects": 34289
+    }
+  },
+  "safe_ground": {
+    "num_evaluated_samples": 6019,
+    "SWHS": {
+      "mean": 3.4157006786379616,
+      "p95": 23.26689409405439,
+      "std": 11.431970541053623,
+      "com_component": 2.4913139177663655,
+      "om_component": 0.30155828143000474,
+      "attr_component": 1.2456569588831827,
+      "mean_frs_swhs": 3.6399999310361,
+      "p95_frs_swhs": 25.95240560149538
+    },
+    "CHAIR": {
+      "chair_i": 2.3154352831266607,
+      "chair_s": 13.989034723375976,
+      "chair_vru": 2.0047698881392186
+    },
+    "Omission_Rates": {
+      "vru_omission_rate": 0.38547152396981377,
+      "near_omission_rate": 0.10790632564379246,
+      "total_vru_objects": 36838,
+      "total_near_objects": 34289
+    }
+  },
+  "improvements": {
+    "swhs_reduction_vs_raw_pct": 95.077391147732,
+    "swhs_reduction_vs_prompt_inj_pct": 89.46162772077217,
+    "chair_i_reduction_pct": 94.78436525524641,
+    "vru_omission_reduction_pct": 99.10211593378202
+  }
+}

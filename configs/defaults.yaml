@@ -1,0 +1,48 @@
+# SAFE-Ground Default Configuration
+
+model:
+  name: "Qwen/Qwen2.5-VL-7B-Instruct"
+  d_model: 3584
+  nhead: 8
+  num_verifier_layers: 1
+  dim_feedforward: 2048
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  lora_target_modules: ["q_proj", "k_proj", "v_proj", "o_proj"]
+
+perception:
+  detector: "BEVFusion"
+  confidence_threshold: 0.25
+  temporal_window_frames: 4
+  max_evidence_detections: 64
+
+training:
+  epochs: 10
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-4
+  verifier_learning_rate: 5.0e-4
+  warmup_ratio: 0.05
+  weight_decay: 0.01
+  lambda_om: 1.0
+  lambda_match: 0.5
+  lambda_lm: 0.1
+
+metrics:
+  swhs:
+    gamma_com: 1.0
+    gamma_om: 1.0
+    gamma_attr: 0.5
+    distance_max: 50.0
+    distance_weight_max: 10.0
+    velocity_beta: 0.1
+    path_lateral_threshold: 1.75
+
+mitigation:
+  abstain:
+    severity_threshold: 25.0
+    vru_miss_threshold: 1
+  correction:
+    max_regenerations: 2
+

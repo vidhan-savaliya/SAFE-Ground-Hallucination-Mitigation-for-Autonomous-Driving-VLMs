@@ -1,0 +1,20 @@
+Corruption Awareness Probe Prompts (DriveBench-Style Extension):
+
+1. Multiple-Choice Corruption Recognition Probe (MCQ):
+Question: Based on the provided camera imagery, identify the environmental condition or sensor failure affecting the view:
+A. Clean (No visual degradation)
+B. Weather / Lighting Degradation (Brightness, Dark, Snow, Fog, Rain)
+C. External Obstruction (Water Splash, Lens Obstacle)
+D. Sensor / Hardware Failure (Camera Crash, Frame Lost, Sensor Saturation)
+E. Optical Motion Blur (Linear Motion Blur, Radial Zoom Blur)
+F. Digital Transmission Artifact (Bit Error, Color Quantization, H.265 Compression Artifacts)
+
+2. Context-Augmented Driving VQA Probe:
+Question: Taking into account that the camera sensor is degraded by [CORRUPTION_TYPE], what is the verified status of the object at <c1, [CAMERA_NAME], [X_NORM], [Y_NORM]>? What safe action should the vehicle take?
+
+3. Detailed Corruption Description / Captioning Probe (CAP):
+Question: Provide a fine-grained technical diagnosis of the camera sensor status:
+- Identify which camera perspectives (if any) are impaired or completely offline.
+- Describe the visual distortion characteristics (e.g., contrast loss, noise pattern, pixel dropout, packet loss artifacts).
+- Specify whether visual evidence is sufficient for safety-critical navigation or whether the vehicle must transition to degraded-sensor safety envelopes.
+

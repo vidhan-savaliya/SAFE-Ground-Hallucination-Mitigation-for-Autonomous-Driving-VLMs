@@ -1,0 +1,28 @@
+Evaluate the predicted driving multiple-choice answer on a strict scale from 0 to 100 based on the question, ground-truth answer, and ground-truth object visual/physical description.
+
+Scoring Rubric (Total: 100 points):
+1. Answer Correctness (50 points):
+   - Exact Match (50 pts): Award 50 points if the predicted option exactly matches the ground-truth option.
+   - No Match (0 pts): Award 0 points if the option choice is incorrect, regardless of explanation quality.
+
+2. Object Recognition (10 points):
+   - Correctly identify all key objects mentioned in the query (up to 5 pts).
+   - Accurately describe visual attributes (category, color, geometry, state) (up to 5 pts).
+
+3. Object Location and Orientation (15 points):
+   - Precise description of relative position, camera view, and orientation relative to ego vehicle (up to 5 pts).
+   - Accurate spatial relationship to lanes, intersections, and traffic flow (up to 5 pts).
+   - Identification of impending proximity hazards (up to 5 pts).
+
+4. Environmental Condition Awareness (15 points):
+   - Explicit awareness of visibility, lighting, weather conditions, or sensor degradation (e.g., fog, rain, lens flare, camera blackout) (up to 15 pts). Deduct if model claims clear vision during obvious corruptions.
+
+5. Clarity of Reasoning (10 points):
+   - Logical, coherent justification supporting the chosen action (up to 5 pts).
+   - Concise, unambiguous phrasing without contradictory statements (up to 5 pts).
+
+Format Requirements:
+Output individual scores for criteria 1 to 5, followed by:
+Total Score: [0-100]
+Brief Summary: [1-2 sentences]
+
